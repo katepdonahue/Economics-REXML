@@ -2,6 +2,14 @@
 # file = File.new( "cia-1996.xml" )
 # doc = REXML::Document.new file
 
+class String
+
+  def name_format
+    downcase.gsub(" ", "_").to_sym
+  end
+
+end
+
 def population(docu)
   hash = Hash.new
   final_hash = Hash.new
@@ -13,10 +21,6 @@ def population(docu)
     final_hash[array[0]] = array[1]
   end
   final_hash
-end
-
-def name_format(string)
-
 end
 
 def inflation_rates(docu)

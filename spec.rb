@@ -53,9 +53,13 @@ describe "#continent_hash" do
   end
 end
 
-describe "#name_format" do
-  it "should turn a string into a symbol with underscores instead of spaces and no capitals" do
-    expect(name_format("Antigua and Barbuda")).to eq(:antigua_and_barbuda)
+describe String do
+
+  describe "#name_format" do
+    it "should turn a string into a symbol with underscores instead of spaces and no capitals" do
+      expect("Antigua and Barbuda".name_format).to eq(:antigua_and_barbuda)
+    end
   end
+
 end
 
