@@ -14,7 +14,7 @@ def population(docu)
   hash = Hash.new
   final_hash = Hash.new
   docu.elements.each("cia/country") do |element|
-    hash[element.attributes["name"].downcase.to_sym] = element.attributes["population"].to_i
+    hash[element.attributes["name"].name_format] = element.attributes["population"].to_i
   end
   arrays = hash.sort_by {|key, val| val}
   arrays.reverse.each do |array|
