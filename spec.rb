@@ -19,7 +19,7 @@ describe "#population" do
                  :antigua_and_barbuda => 65647, 
                  :american_samoa => 59566, 
                  :anguilla => 10424 }
-    expect(country_access(doc, "population", "integer")).to eq(pop_hash)
+    expect(country_access(doc, "population", :to_i)).to eq(pop_hash)
   end
 end
 
@@ -37,7 +37,7 @@ describe "#inflation_rates" do
                        :afghanistan => 0, 
                        :american_samoa => 0, 
                        :andorra => 0 }
-    expect(country_access(doc, "inflation", "float")).to eq(inflation_hash)
+    expect(country_access(doc, "inflation", :to_f)).to eq(inflation_hash)
   end
 end
 

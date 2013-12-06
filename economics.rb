@@ -15,9 +15,7 @@ def country_access(docu, info, style)
   final_hash = Hash.new
   docu.elements.each("cia/country") do |element|
     data = element.attributes[info]
-    data = data.to_i if style == "integer"
-    data = data.to_f if style == "float"
-    hash[element.attributes["name"].name_format] = data
+    hash[element.attributes["name"].name_format] = data.send(style)
   end
   arrays = hash.sort_by {|key, val| val}
   arrays.reverse.each do |array|
@@ -26,31 +24,6 @@ def country_access(docu, info, style)
   final_hash
 end
 
-# def population(docu)
-#   hash = Hash.new
-#   final_hash = Hash.new
-#   docu.elements.each("cia/country") do |element|
-#     hash[element.attributes["name"].name_format] = element.attributes["population"].to_i
-#   end
-#   arrays = hash.sort_by {|key, val| val}
-#   arrays.reverse.each do |array|
-#     final_hash[array[0]] = array[1]
-#   end
-#   final_hash
-# end
-
-# def inflation_rates(docu)
-#   hash = Hash.new
-#   final_hash = Hash.new
-#   docu.elements.each("cia/country") do |element|
-#     hash[element.attributes["name"].name_format] = element.attributes["inflation"].to_f
-#   end
-#   arrays = hash.sort_by {|key, val| val}
-#   arrays.reverse.each do |array|
-#     final_hash[array[0]] = array[1]
-#   end
-#   final_hash
-# end
 
 def continent_hash(docu)
   hash = Hash.new
