@@ -1,15 +1,28 @@
-require 'rexml/document'
-file = File.new( "cia-1996.xml" ) #is this repetitive if I already have a file?
-doc = REXML::Document.new file
+# require 'rexml/document'
+# file = File.new( "cia-1996.xml" )
+# doc = REXML::Document.new file
 
-def population
+def population(docu)
+  hash = Hash.new
+  final_hash = Hash.new
+  docu.elements.each("cia/country") do |element|
+    hash[element.attributes["name"].downcase.to_sym] = element.attributes["population"].to_i
+  end
+  arrays = hash.sort_by {|key, val| val}
+  arrays.reverse.each do |array|
+    final_hash[array[0]] = array[1]
+  end
+  final_hash
+end
+
+def name_format(string)
 
 end
 
-def inflation_rates
+def inflation_rates(docu)
 
 end
 
-def continent_hash
+def continent_hash(docu)
 
 end

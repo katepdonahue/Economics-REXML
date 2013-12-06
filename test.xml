@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cia SYSTEM "cia.dtd">
+<cia>
+<continent id='europe' 
+  name='Europe'/>
+
+<continent id='asia' 
+  name='Asia'/>
+
+<continent id='northAmerica' 
+  name='North America'/>
+
+<continent id='australia' 
+  name='Australia/Oceania'/>
+
+<continent id='southAmerica' 
+  name='South America'/>
+
+<continent id='africa' 
+  name='Africa'/>
+
+<country id='cid-cia-Albania' 
+  continent='Europe'
+  name='Albania'
+  datacode='AL'
+  total_area='28750'
+  population='3249136'
+  population_growth='1.34'
+  infant_mortality='49.2'
+  gdp_agri='55'
+  inflation='16'
+  gdp_total='4100'
+  indep_date='28 11 1912'
+  government='emerging democracy'
+  capital='Tirane'>
+  <ethnicgroups name='Greeks'>3</ethnicgroups>
+  <ethnicgroups name='Albanian'>95</ethnicgroups>
+  <religions name='Muslim'>70</religions>
+  <religions name='Roman Catholic'>10</religions>
+  <religions name='Albanian Orthodox'>20</religions>
+  <borders country='cid-cia-Greece'>282</borders>
+  <borders country='cid-cia-Macedonia'>151</borders>
+  <borders country='cid-cia-Serbia-and-Montenegro'>287</borders>
+  <coasts>Adriatic Sea</coasts>
+  <coasts>Ionian Sea</coasts>
+  <coasts>Serbia</coasts>
+  <coasts>Montenegro</coasts>
+</country>
+
+<country id='cid-cia-Andorra' 
+  continent='Europe'
+  name='Andorra'
+  datacode='AN'
+  total_area='450'
+  population='72766'
+  population_growth='2.96'
+  infant_mortality='2.2'
+  gdp_total='1000'
+  government='parliamentary democracy that retains as its heads of state a coprincipality'
+  capital='Andorra la Vella'>
+  <ethnicgroups name='French'>6</ethnicgroups>
+  <ethnicgroups name='Spanish'>61</ethnicgroups>
+  <ethnicgroups name='Andorran'>30</ethnicgroups>
+  <religions name='Roman Catholic'>100</religions>
+  <borders country='cid-cia-France'>60</borders>
+  <borders country='cid-cia-Spain'>65</borders>
+</country>
+
+<country id='cid-cia-Afghanistan' 
+  continent='Asia'
+  name='Afghanistan'
+  datacode='AF'
+  total_area='647500'
+  population='22664136'
+  population_growth='4.78'
+  infant_mortality='149.7'
+  gdp_agri='65'
+  gdp_ind='15'
+  gdp_serv='20'
+  gdp_total='12800'
+  indep_date='19 08 1919'
+  government='transitional government'
+  capital='Kabul'>
+  <ethnicgroups name='Tajik'>25</ethnicgroups>
+  <ethnicgroups name='Pashtun'>38</ethnicgroups>
+  <ethnicgroups name='Uzbek'>6</ethnicgroups>
+  <ethnicgroups name='Hazara'>19</ethnicgroups>
+  <religions name='Sunni Muslim'>84</religions>
+  <religions name='Shia Muslim'>15</religions>
+  <languages name='Turkic'>11</languages>
+  <languages name='Pashtu'>35</languages>
+  <languages name='Afghan Persian'>50</languages>
+  <borders country='cid-cia-China'>76</borders>
+  <borders country='cid-cia-Iran'>936</borders>
+  <borders country='cid-cia-Pakistan'>2430</borders>
+  <borders country='cid-cia-Tajikistan'>1206</borders>
+  <borders country='cid-cia-Turkmenistan'>744</borders>
+  <borders country='cid-cia-Uzbekistan'>137</borders>
+</country>
+
+<country id='cid-cia-Armenia' 
+  continent='Asia'
+  name='Armenia'
+  datacode='AM'
+  total_area='29800'
+  population='3463574'
+  population_growth='0.02'
+  infant_mortality='38.9'
+  gdp_agri='57'
+  inflation='32.2'
+  gdp_ind='36'
+  gdp_serv='7'
+  gdp_total='9100'
+  indep_date='28 05 1918'
+  government='republic'
+  capital='Yerevan'>
+  <ethnicgroups name='Russian'>2</ethnicgroups>
+  <ethnicgroups name='Armenian'>93</ethnicgroups>
+  <ethnicgroups name='Azeri'>3</ethnicgroups>
+  <religions name='Armenian Orthodox'>94</religions>
+  <languages name='Russian'>2</languages>
+  <languages name='Armenian'>96</languages>
+  <borders country='cid-cia-Georgia'>164</borders>
+  <borders country='cid-cia-Iran'>35</borders>
+  <borders country='cid-cia-Turkey'>268</borders>
+</country>
+
+<country id='cid-cia-Anguilla' 
+  continent='North America'
+  name='Anguilla'
+  datacode='AV'
+  total_area='91'
+  population='10424'
+  population_growth='3.45'
+  infant_mortality='23'
+  inflation='4'
+  gdp_total='53'
+  government='dependent territory of the UK'
+  capital='The Valley'>
+  <ethnicgroups name='African'>100</ethnicgroups>
+  <religions name='Roman Catholic'>3</religions>
+  <religions name='Anglican'>40</religions>
+  <religions name='Baptist'>5</religions>
+  <religions name='Seventh-Day Adventist'>7</religions>
+  <religions name='Methodist'>33</religions>
+  <languages name='English'>100</languages>
+  <coasts>Caribbean Sea</coasts>
+</country>
+
+<country id='cid-cia-Antigua-and-Barbuda' 
+  continent='North America'
+  name='Antigua and Barbuda'
+  datacode='AC'
+  total_area='440'
+  population='65647'
+  population_growth='0.76'
+  infant_mortality='17.2'
+  gdp_agri='3.5'
+  inflation='3.5'
+  gdp_ind='19.3'
+  gdp_serv='77.2'
+  gdp_total='425'
+  indep_date='01 11 1981'
+  government='parliamentary democracy'
+  capital='Saint Johns'>
+  <languages name='English'>100</languages>
+  <coasts>North Atlantic Ocean</coasts>
+  <coasts>Caribbean Sea</coasts>
+</country>
+
+<country id='cid-cia-American-Samoa' 
+  continent='Australia/Oceania'
+  name='American Samoa'
+  datacode='AQ'
+  total_area='199'
+  population='59566'
+  population_growth='3.77'
+  infant_mortality='18.78'
+  gdp_total='128'
+  government='unincorporated and unorganized territory of the US'
+  capital='Pago Pago'>
+  <ethnicgroups name='Caucasian'>2</ethnicgroups>
+  <ethnicgroups name='Tongan'>4</ethnicgroups>
+  <ethnicgroups name='Samoan'>89</ethnicgroups>
+  <religions name='Roman Catholic'>20</religions>
+  <religions name='Protestant'>30</religions>
+  <religions name='Christian Congregationalist'>50</religions>
+  <coasts>South Pacific Ocean</coasts>
+</country>
+
+<country id='cid-cia-Australia' 
+  continent='Australia/Oceania'
+  name='Australia'
+  datacode='AS'
+  total_area='7686850'
+  population='18260863'
+  population_growth='0.99'
+  infant_mortality='5.5'
+  gdp_agri='3.1'
+  inflation='4.75'
+  gdp_ind='27.7'
+  gdp_serv='69.2'
+  gdp_total='405400'
+  indep_date='01 01 1901'
+  government='federal parliamentary state'
+  capital='Canberra'>
+  <ethnicgroups name='Asian'>4</ethnicgroups>
+  <ethnicgroups name='Caucasian'>95</ethnicgroups>
+  <religions name='Roman Catholic'>26</religions>
+  <religions name='Anglican'>26.1</religions>
+  <religions name='Christian'>24.3</religions>
+  <languages name='English'>100</languages>
+  <coasts>Indian Ocean</coasts>
+  <coasts>South Pacific Ocean</coasts>
+</country>
+
+<country id='cid-cia-Argentina' 
+  continent='South America'
+  name='Argentina'
+  datacode='AR'
+  total_area='2766890'
+  population='34672997'
+  population_growth='1.1'
+  infant_mortality='28.3'
+  gdp_agri='6'
+  inflation='1.7'
+  gdp_ind='31'
+  gdp_serv='63'
+  gdp_total='278500'
+  indep_date='09 07 1816'
+  government='republic'
+  capital='Buenos Aires'>
+  <ethnicgroups name='Indian'>100</ethnicgroups>
+  <religions name='Jewish'>2</religions>
+  <religions name='Roman Catholic'>90</religions>
+  <religions name='Protestant'>2</religions>
+  <borders country='cid-cia-Bolivia'>832</borders>
+  <borders country='cid-cia-Brazil'>1224</borders>
+  <borders country='cid-cia-Chile'>5150</borders>
+  <borders country='cid-cia-Paraguay'>1880</borders>
+  <borders country='cid-cia-Uruguay'>579</borders>
+  <coasts>South Atlantic Ocean</coasts>
+</country>
+
+<country id='cid-cia-Bolivia' 
+  continent='South America'
+  name='Bolivia'
+  datacode='BL'
+  total_area='1098580'
+  population='7165257'
+  population_growth='1.82'
+  infant_mortality='67.5'
+  inflation='12'
+  gdp_total='20000'
+  indep_date='06 08 1825'
+  government='republic'
+  capital='La Paz'>
+  <ethnicgroups name='European'>5</ethnicgroups>
+  <ethnicgroups name='Quechua'>30</ethnicgroups>
+  <ethnicgroups name='Aymara'>25</ethnicgroups>
+  <religions name='Roman Catholic'>95</religions>
+  <borders country='cid-cia-Argentina'>832</borders>
+  <borders country='cid-cia-Brazil'>3400</borders>
+  <borders country='cid-cia-Chile'>861</borders>
+  <borders country='cid-cia-Paraguay'>750</borders>
+  <borders country='cid-cia-Peru'>900</borders>
+</country>
+
+<country id='cid-cia-Algeria' 
+  continent='Africa'
+  name='Algeria'
+  datacode='AG'
+  total_area='2381740'
+  population='29183032'
+  population_growth='2.21'
+  infant_mortality='48.7'
+  gdp_agri='12'
+  inflation='28'
+  gdp_ind='50'
+  gdp_serv='38'
+  gdp_total='108700'
+  indep_date='05 07 1962'
+  government='republic'
+  capital='Algiers'>
+  <ethnicgroups name='European'>1</ethnicgroups>
+  <ethnicgroups name='Arab-Berber'>99</ethnicgroups>
+  <religions name='Sunni Muslim'>99</religions>
+  <religions name='Christian Jewish'>1</religions>
+  <borders country='cid-cia-Libya'>982</borders>
+  <borders country='cid-cia-Mali'>1376</borders>
+  <borders country='cid-cia-Mauritania'>463</borders>
+  <borders country='cid-cia-Morocco'>1559</borders>
+  <borders country='cid-cia-Niger'>956</borders>
+  <borders country='cid-cia-Tunisia'>965</borders>
+  <borders country='cid-cia-Western-Sahara'>42</borders>
+  <coasts>Mediterranean Sea</coasts>
+</country>
+
+<country id='cid-cia-Angola' 
+  continent='Africa'
+  name='Angola'
+  datacode='AO'
+  total_area='1246700'
+  population='10342899'
+  population_growth='2.68'
+  infant_mortality='138.9'
+  gdp_agri='12'
+  inflation='20'
+  gdp_ind='56'
+  gdp_serv='32'
+  gdp_total='7400'
+  indep_date='11 11 1975'
+  government='transitional government nominally a multiparty democracy with a strong presidential system'
+  capital='Luanda'>
+  <ethnicgroups name='European'>1</ethnicgroups>
+  <ethnicgroups name='Ovimbundu'>37</ethnicgroups>
+  <ethnicgroups name='Kimbundu'>25</ethnicgroups>
+  <ethnicgroups name='Bakongo'>13</ethnicgroups>
+  <religions name='Roman Catholic'>38</religions>
+  <religions name='Protestant'>15</religions>
+  <borders country='cid-cia-Congo'>201</borders>
+  <borders country='cid-cia-Namibia'>1376</borders>
+  <borders country='cid-cia-Zaire'>2511</borders>
+  <borders country='cid-cia-Zambia'>1110</borders>
+  <coasts>South Atlantic Ocean</coasts>
+</country>
+
+</cia>
