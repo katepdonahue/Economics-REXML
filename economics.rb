@@ -5,7 +5,7 @@
 class String
 
   def name_format
-    downcase.gsub(" ", "_").to_sym
+    downcase.gsub(/\s|\//, "_").to_sym
   end
 
 end
@@ -37,5 +37,13 @@ def inflation_rates(docu)
 end
 
 def continent_hash(docu)
-
+  hash = Hash.new
+  final_hash = Hash.new
+  docu.elements.each("cia/continent") do |element|
+    hash[element.attributes["name"].name_format] = []
+  end
+  docu.elements.each("cia/country") do |element|
+    hash[element.attributes["continent"].name_format] <<  element.attributes["name"].name_format
+  end
+  hash
 end
