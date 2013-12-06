@@ -24,7 +24,16 @@ def population(docu)
 end
 
 def inflation_rates(docu)
-
+  hash = Hash.new
+  final_hash = Hash.new
+  docu.elements.each("cia/country") do |element|
+    hash[element.attributes["name"].name_format] = element.attributes["inflation"].to_f
+  end
+  arrays = hash.sort_by {|key, val| val}
+  arrays.reverse.each do |array|
+    final_hash[array[0]] = array[1]
+  end
+  final_hash
 end
 
 def continent_hash(docu)
