@@ -1,6 +1,6 @@
-# require 'rexml/document'
-# file = File.new( "cia-1996.xml" )
-# doc = REXML::Document.new file
+require 'rexml/document'
+file = File.new( "cia-1996.xml" )
+doc = REXML::Document.new file
 
 class String
 
@@ -36,3 +36,27 @@ def continent_hash(docu)
   end
   hash
 end
+
+class Hash
+  
+  def print_continents
+    self.each do |key, val|
+      puts "#{key}:"
+      val.each do |country|
+        puts "        #{country}"
+      end
+      puts
+    end
+  end
+
+end
+
+# what is the population of the country with the most people?
+puts country_access(doc, "population", :to_i).first
+
+# what are the five countries with the highest inflation rates?
+puts country_access(doc, "inflation", :to_f).first(5)
+
+# What are the continents and their countries in alphabetical order?
+continent_hash(doc).print_continents
+
